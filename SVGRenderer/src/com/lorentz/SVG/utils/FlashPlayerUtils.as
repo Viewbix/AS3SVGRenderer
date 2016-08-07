@@ -8,6 +8,7 @@ package com.lorentz.SVG.utils
 	{
 		private static var _supportsCubicCurves:Object = null;
 		public static function get supportsCubicCurves():Boolean {
+			return false;
 			if(_supportsCubicCurves == null)
 				_supportsCubicCurves = graphicsHasCubicCurveToMethod() && graphicsPathCommandHasCubicCurveToConstant();
 			
